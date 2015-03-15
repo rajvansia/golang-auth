@@ -1,0 +1,9 @@
+{
+	"secret": "secret",
+	"public_path": "./src/github.com/rajvansia/golang-auth/public",
+	"template_path": "./src/github.com/rajvansia/golang-auth/views",	
+	"database": {
+		"hosts": "mongodb://raj:raj@ds049219.mongolab.com:49219/raj",
+		"database": "defaultproject"
+	}
+}

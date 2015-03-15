@@ -4,7 +4,7 @@ import (
 	mgo "gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 	"code.google.com/p/go.crypto/bcrypt"
-	"github.com/elcct/defaultproject/models"
+	"github.com/rajvansia/golang-auth/models"
 )
 
 func Login(c *mgo.Database, email string, password string) (user *models.User, err error) {

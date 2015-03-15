@@ -1,7 +1,7 @@
 package web
 
 import (
-	"github.com/elcct/defaultproject/models"
+	"github.com/rajvansia/golang-auth/models"
 	"github.com/golang/glog"
 	"github.com/zenazn/goji/web"
 	"html/template"

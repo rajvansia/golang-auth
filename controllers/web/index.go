@@ -3,7 +3,7 @@ package web
 import (
 	"net/http"
 
-	"github.com/elcct/defaultproject/helpers"
+	"github.com/rajvansia/golang-auth/helpers"
 	"github.com/zenazn/goji/web"
 	"html/template"
 )

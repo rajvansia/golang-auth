@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"github.com/golang/glog"
 	"github.com/zenazn/goji/web"
-	"github.com/elcct/defaultproject/models"
+	"github.com/rajvansia/golang-auth/models"
 	"github.com/gorilla/context"
 	"github.com/gorilla/sessions"
 	mgo "gopkg.in/mgo.v2"

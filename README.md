@@ -1,4 +1,4 @@
-Default Project [![Build Status](https://drone.io/github.com/elcct/defaultproject/status.png)](https://drone.io/github.com/elcct/defaultproject/latest)
+Default Project [![Build Status](https://drone.io/github.com/rajvansia/golang-auth/status.png)](https://drone.io/github.com/rajvansia/golang-auth/latest)
 ===============
 
 Provides essentials that most web applications need - MVC pattern and user authorisation that can be easily extended.
@@ -39,13 +39,13 @@ sudo apt-get install mongodb-org
 No go to your GOPATH location and run:
 
 ```
-go get github.com/elcct/defaultproject
+go get github.com/rajvansia/golang-auth
 ```
 
 And then:
 
 ```
-go install github.com/elcct/defaultproject
+go install github.com/rajvansia/golang-auth
 ```
 
 In your GOPATH directory you can create `config.json` file:
@@ -53,8 +53,8 @@ In your GOPATH directory you can create `config.json` file:
 ```
 {
 	"secret": "secret",
-	"public_path": "./src/github.com/elcct/defaultproject/public",
-	"template_path": "./src/github.com/elcct/defaultproject/views",	
+	"public_path": "./src/github.com/rajvansia/golang-auth/public",
+	"template_path": "./src/github.com/rajvansia/golang-auth/views",	
 	"database": {
 		"hosts": "localhost",
 		"database": "defaultproject"
@@ -117,19 +117,19 @@ Now I have to prepare `defaultproject`. First thing is that I have to delete its
 I issue:
 
 ```
-rm -rf src/github.com/elcct/defaultproject/.git
+rm -rf src/github.com/rajvansia/golang-auth/.git
 ```
 
-Then I want to replace all references from `github.com/elcct/defaultproject` to `github.com/elcct/amazingwebsite`:
+Then I want to replace all references from `github.com/rajvansia/golang-auth` to `github.com/elcct/amazingwebsite`:
 
 ```
-grep -rl 'github.com/elcct/defaultproject' ./ | xargs sed -i 's/github.com\/elcct\/defaultproject/github.com\/elcct\/amazingwebsite/g'
+grep -rl 'github.com/rajvansia/golang-auth' ./ | xargs sed -i 's/github.com\/elcct\/defaultproject/github.com\/elcct\/amazingwebsite/g'
 ```
 
 Now I have to move all `defaultproject` files to the new location:
 
 ```
-mv src/github.com/elcct/defaultproject/ src/github.com/elcct/amazingwebsite
+mv src/github.com/rajvansia/golang-auth/ src/github.com/elcct/amazingwebsite
 ```
 
 And push it to my new repository at `GitHub`:

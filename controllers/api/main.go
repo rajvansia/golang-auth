@@ -1,7 +1,7 @@
 package api
 
 import (
-	"github.com/elcct/defaultproject/system"
+	"github.com/rajvansia/golang-auth/system"
 )
 
 type Controller struct {

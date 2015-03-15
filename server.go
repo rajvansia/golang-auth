@@ -5,8 +5,8 @@ import (
 	"github.com/golang/glog"
 	"net/http"
 
-	"github.com/elcct/defaultproject/controllers/web"
-	"github.com/elcct/defaultproject/system"
+	"github.com/rajvansia/golang-auth/controllers/web"
+	"github.com/rajvansia/golang-auth/system"
 
 	"github.com/zenazn/goji"
 	"github.com/zenazn/goji/graceful"
